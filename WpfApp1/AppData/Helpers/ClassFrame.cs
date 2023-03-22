@@ -11,5 +11,6 @@ namespace WpfApp1.AppData.Helpers
     {
         public static Frame FrameMain;
         public static Frame FrameBody;
+        
     }
 }

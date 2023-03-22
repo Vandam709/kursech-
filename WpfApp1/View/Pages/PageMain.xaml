@@ -9,16 +9,16 @@
       Title="PageMain">
 
     <Grid>
-        <Border Grid.Row="1" CornerRadius=" 0 15 15 0">
+        <Border Grid.Row="1" CornerRadius=" 0 15 15 0" BorderThickness="1" BorderBrush="Black">
             <Border.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color=" #A2A2D0" Offset="0"/>
+                    <GradientStop Color=" #E6E6FA" Offset="0"/>
                     
                 </LinearGradientBrush>
             </Border.Background>
             <StackPanel VerticalAlignment="Center" >
                 <TextBlock HorizontalAlignment="Center">
-                  <Hyperlink FontSize="20" Name="Planirovanie" >
+                  <Hyperlink FontSize="20" Name="Planirovanie" Click="Planirovanie_Click" >
                       Планирование
                   </Hyperlink>
                 </TextBlock>
@@ -27,9 +27,9 @@
                     Отчёты
                   </Hyperlink>
                 </TextBlock>
-                <TextBlock HorizontalAlignment="Center">
-                  <Hyperlink FontSize="20" Name="Yslovie" >
-                    Условия
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" >
+                  <Hyperlink FontSize="20" Name="Tarif" Click="Tarif_Click" >
+                    Тарифы 
                   </Hyperlink>
                 </TextBlock>
                 <TextBlock HorizontalAlignment="Center">

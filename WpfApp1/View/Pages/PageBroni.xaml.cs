@@ -12,24 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfApp1.View.Windows;
 
 namespace WpfApp1.View.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для PageBody.xaml
+    /// Логика взаимодействия для PageBroni.xaml
     /// </summary>
-    public partial class PageBody : Page
+    public partial class PageBroni : Page
     {
-        public PageBody()
+        public PageBroni()
         {
             InitializeComponent();
-        }
-
-        private void BronBT_Click(object sender, RoutedEventArgs e)
-        {
-            DobavlenieBroni dobavlenieBroni = new DobavlenieBroni();
-            dobavlenieBroni.Show();
         }
     }
 }

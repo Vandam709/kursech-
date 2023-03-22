@@ -1,19 +1,18 @@
-﻿<Window x:Class="WpfApp1.View.Windows.OknoRegistration"
+﻿<Window x:Class="WpfApp1.View.Windows.DobavlenieBroni"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1.View.Windows"
         mc:Ignorable="d"
-        Title="OknoRegistration" Height="450" Width="450" WindowStartupLocation="CenterScreen"  WindowStyle="None"
+        Title="DobavlenieBroni" Height="450" Width="450" WindowStartupLocation="CenterScreen"  WindowStyle="None"
         ResizeMode="NoResize">
-  
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="7*" />
             <ColumnDefinition Width="1*" />
-            
+
         </Grid.ColumnDefinitions>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.9">
@@ -27,51 +26,43 @@
             <RowDefinition Height="4*" />
             <RowDefinition Height="4*" />
             <RowDefinition Height="4*" />
-            <RowDefinition Height="4*" />
-            <RowDefinition Height="4*" />
             
+            <RowDefinition Height="4*" />
         </Grid.RowDefinitions>
-        <StackPanel  Grid.Row="1" Grid.Column="1">
-            <TextBlock Name="FioT" Text="Фамилия" FontSize="20" Foreground="Black" Margin="2"/>
-            <TextBox x:Name="FioTb" FontSize="20" Margin="5" TextChanged="FioTb_TextChanged"/>
-        </StackPanel >
-        <StackPanel  Grid.Row="2" Grid.Column="1">
-            <TextBlock Name="NameT" Text="Имя" FontSize="20" Foreground="Black" Margin="2"/>
-            <TextBox x:Name="NameTb" FontSize="20" Margin="5"/>
-        </StackPanel >
-        <StackPanel  Grid.Row="3" Grid.Column="1">
-            <TextBlock Name="PatronymicT" Text="Отчество" FontSize="20" Foreground="Black" Margin="2"/>
-            <TextBox x:Name="PatronymicTb" FontSize="20" Margin="5"/>
-        </StackPanel >
-        <StackPanel  Grid.Row="4"  Grid.Column="1">
+        <StackPanel  Grid.Row="1"  Grid.Column="1">
             <TextBlock Name="LogT" Text="Введите логин" FontSize="20" Foreground="Black" Margin="2"/>
             <TextBox x:Name="LogTb" FontSize="20" Margin="5"/>
         </StackPanel>
-        <StackPanel  Grid.Row="5"  Grid.Column="1">
-            <TextBlock Name="PassT" Text="Введите пароль" FontSize="20" Foreground="Black" Margin="2"/>
+        <StackPanel  Grid.Row="2" Grid.Column="1">
+            <TextBlock Name="NumberT" Text="Введите номер телефона" FontSize="20" Foreground="Black" Margin="2"/>
+            <TextBox x:Name="NumberTB" FontSize="20" Margin="5"/>
+        </StackPanel >
+        <StackPanel  Grid.Row="3" Grid.Column="1" Cursor="">
+            <TextBlock Name="DatePosT" Text="Выберите дату посещения" FontSize="20" Foreground="Black" Margin="2"/>
+            <DatePicker/>
+        </StackPanel >
+        
+        <StackPanel  Grid.Row="4"  Grid.Column="1">
+            <TextBlock Name="PassT" Text="Введите желаемую комнату" FontSize="20" Foreground="Black" Margin="2"/>
             <PasswordBox x:Name="PassTb" FontSize="20" Margin="5"/>
         </StackPanel>
-        <Button Grid.Row="6"  Grid.Column="1" x:Name="RegBtn" Content="Зарегистрироваться"  FontSize="18" Margin="10" Width="180" Click="RegBtn_Click" />
-       <Grid Grid.Row="0" Grid.Column="2" >
+        <Button Grid.Row="5"  Grid.Column="1" x:Name="BronBt" Content="Забронировать"  FontSize="18" Margin="10" Width="180"  Click="BronBt_Click" />
+        <Grid Grid.Row="0" Grid.Column="2" >
             <StackPanel Orientation="Horizontal">
-            <Button Name="MinimizeBtn"
+                <Button Name="MinimizeBtn"
                         Content="—" 
                         Style="{StaticResource WindowButton}"
                         ToolTip="Свернуть"
                         Click="MinimizeBtn_Click"  Cursor=""/>
 
-            <Button Name="MaximizeBtn"
-                        Content="◱" 
-                        Style="{StaticResource WindowButton}"
-                        ToolTip="Развернуть"
-                        Click="MaximizeBtn_Click"/>
+                
 
-            <Button Name="CloseAppBtn"
+                <Button Name="CloseAppBtn"
                         Content="✕" 
                         Style="{StaticResource WindowButton}"
                         ToolTip="Закрыть"
                         Click="CloseAppBtn_Click"/>
             </StackPanel>
-       </Grid>
+        </Grid>
     </Grid>
 </Window>

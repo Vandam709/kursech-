@@ -99,8 +99,17 @@
     <Compile Include="View\Pages\PageBody.xaml.cs">
       <DependentUpon>PageBody.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Pages\PageBroni.xaml.cs">
+      <DependentUpon>PageBroni.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\PageHome.xaml.cs">
+      <DependentUpon>PageHome.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Pages\PageMain.xaml.cs">
       <DependentUpon>PageMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\PageTarif_Kontact.xaml.cs">
+      <DependentUpon>PageTarif_Kontact.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Windows\AvtorizationWindow.xaml.cs">
       <DependentUpon>AvtorizationWindow.xaml</DependentUpon>
@@ -108,6 +117,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\Windows\DobavlenieBroni.xaml.cs">
+      <DependentUpon>DobavlenieBroni.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Windows\OknoProfile.xaml.cs">
       <DependentUpon>OknoProfile.xaml</DependentUpon>
@@ -119,11 +131,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Pages\PageBroni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\PageHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Pages\PageMain.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Pages\PageTarif_Kontact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Windows\AvtorizationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\DobavlenieBroni.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -182,6 +210,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\Images\Снимок экрана %284%29.png" />
     <Resource Include="Resources\Images\HomeLoft.jpg" />
     <Resource Include="Resources\Images\LoftHorror.jpg" />
   </ItemGroup>

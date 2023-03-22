@@ -35,6 +35,8 @@
         <Frame
             Name="FrameBodyMain"
             NavigationUIVisibility="Hidden"  Grid.RowSpan="5"  Grid.Column="2" Grid.ColumnSpan="3" Margin="5,26,0,10"/>
+        
+
         <Grid Grid.Row="0" Grid.Column="4"  HorizontalAlignment="Center">
             <StackPanel Orientation="Horizontal">
                 <Button Name="MinimizeBtn" Width="22"

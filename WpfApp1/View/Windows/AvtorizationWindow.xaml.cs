@@ -48,22 +48,26 @@ namespace WpfApp1.View.Windows
 
         private void AuthBtn_Click(object sender, RoutedEventArgs e)
         {
-            var enter = AppData.Helpers.ClassConnect.panas.Profiles.Where(i => i.Login == LogTb.Text && i.Password == PassTb.Password).FirstOrDefault();
-            if (enter != null)
-            {
+            //var enter = AppData.Helpers.ClassConnect.panas.Profiles.Where(i => i.Login == LogTb.Text && i.Password == PassTb.Password).FirstOrDefault();
+            //if (enter != null)
+            //{
 
 
-                OknoProfile oknoProfile = new OknoProfile();
-               oknoProfile.Show();
-                Close();
+            //    OknoProfile oknoProfile = new OknoProfile();
+            //   oknoProfile.Show();
+            //    Close();
 
-            }
-            if (enter == null)
-            {
+            //}
+            //if (enter == null)
+            //{
 
-                MessageBox.Show("Пользователь не зарегестрирован ");
+            //    MessageBox.Show("Пользователь не зарегестрирован ");
 
-            }
+            //}
+
+            OknoProfile oknoProfile = new OknoProfile();
+            oknoProfile.Show();
+            this.Close();
         }
 
         private void RegBtn_Click(object sender, RoutedEventArgs e)

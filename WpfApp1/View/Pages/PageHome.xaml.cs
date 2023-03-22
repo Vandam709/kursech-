@@ -17,11 +17,11 @@ using WpfApp1.View.Windows;
 namespace WpfApp1.View.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для PageBody.xaml
+    /// Логика взаимодействия для PageHome.xaml
     /// </summary>
-    public partial class PageBody : Page
+    public partial class PageHome : Page
     {
-        public PageBody()
+        public PageHome()
         {
             InitializeComponent();
         }
